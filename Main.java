@@ -21,8 +21,8 @@ public class Main {
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventana.setLocationRelativeTo(null);
 		ventana.setTitle("Snake by franberdejo");
-		Toolkit test = Toolkit.getDefaultToolkit();
-		ventana.setIconImage(test.getImage("gallery/images.jpeg"));
+		//Toolkit test = Toolkit.getDefaultToolkit();
+		//ventana.setIconImage(test.getImage("gallery/images.jpeg"));
 		ventana.setResizable(false);
 		
 		//Arraylist donde se almacenara cada fragmento de la serpiente
@@ -31,7 +31,7 @@ public class Main {
 		serpiente.add(fragSerpiente);
 		
 		
-		//creo el Panel y lo añado a la ventana
+		//creo el Panel y lo aÃ±ado a la ventana
 		renderizar render = new renderizar();
 		ventana.getContentPane().add(render);
 		ventana.revalidate();
@@ -40,7 +40,7 @@ public class Main {
 		Manzana manzana = new Manzana();
 		manzana.setStatus(true);
 		
-		//inicializo el lector de teclado y lo añado a la ventana
+		//inicializo el lector de teclado y lo aÃ±ado a la ventana
 		evento tecla = new evento();
 		ventana.addKeyListener(tecla);
 
